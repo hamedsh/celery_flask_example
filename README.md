@@ -1,8 +1,8 @@
-Run remote APi simulator (with random delay 2~5s)
+Run remote APi simulator (with random delay 2~5s). port 8008
 
 `python3 flaskRemoteWebServer.py`
 
-run main webServer that sends requests to remote API
+run main webServer that sends requests to remote API. port 8009
 
 `python3 flaskLocalServer.py`
 

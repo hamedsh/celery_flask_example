@@ -1,5 +1,5 @@
 import requests
-from Crypto.Random.random import randint
+from random import randint
 
 BASE_URL = 'http://127.0.0.1:8009/getapi?num='
 

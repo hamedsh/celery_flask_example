@@ -1,15 +1,13 @@
 from random import randint
 from time import sleep
 
-from flask import Flask, make_response, jsonify, request
-from flask_cors import CORS
+from flask import Flask, jsonify, request
 
 # import logging
 # log = logging.getLogger('werkzeug')
 # log.setLevel(logging.ERROR)
 
 app = Flask("test")
-CORS(app)
 
 
 @app.route("/error504", methods=["GET", "POST"])
