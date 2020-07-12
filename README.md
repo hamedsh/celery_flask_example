@@ -1,4 +1,8 @@
+Run remote APi simulator (with random delay 2~5s)
+
 `python3 flaskRemoteWebServer.py`
+
+run main webServer that sends requests to remote API
 
 `python3 flaskLocalServer.py`
 
@@ -11,6 +15,8 @@ run multiple worker in multiple terminal window
 run benchmark
 
 `python3 bench.py`
+
+responses are storing in redis db 4
 
 architecture:
 
