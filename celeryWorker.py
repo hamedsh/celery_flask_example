@@ -22,7 +22,6 @@ def getWebCelery(key, num, method='GET', timeout=10):
     try:
         st = time.time()
         url = f'{BASE_URL}?num={num}'
-        print('-----', url)
         res = requests.request(method.upper(), f'{url}', timeout=timeout)
         load_time = time.time() - st
         load_time = round(load_time, 1)
@@ -34,5 +33,4 @@ def getWebCelery(key, num, method='GET', timeout=10):
         return -1, "Failed to get fund status from MFR API: {}".format(str(e.errno))
     except Exception as e:
         return -2, e.args[0]
-    return 200,load_time
-
+    return 200, load_time
